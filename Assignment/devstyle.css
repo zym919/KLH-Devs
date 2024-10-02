@@ -1,0 +1,274 @@
+/* Reset and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Global settings */
+body {
+    font-family: Arial, sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+    }
+    
+}
+
+/* Main container */
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid brown;
+    background-color: #f5f5f5;
+}
+
+header .logo {
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header a {
+    color: brown;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Main section */
+main {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Banner */
+main .banner {
+    padding: 50px 0;
+    border-bottom: 1px solid brown;
+    color: blueviolet;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+main .banner .hero-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 475px;
+}
+
+.hero-texts h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+.hero-texts button {
+    align-self: flex-start;
+}
+
+main .banner .hero-img {
+    max-width: 600px;
+    overflow: hidden;
+    flex-grow: 0;
+}
+
+main .banner .hero-img img {
+    width: 100%;
+}
+
+/* Info section */
+main .info, main .devs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.info h2, .devs h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px brown;
+    border: 1px solid brown;
+    align-items: center;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.row .card .desc {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.info .card {
+    box-shadow: none;
+}
+
+/* About section */
+.banner-about {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table thead {
+    background-color: blueviolet;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid brown;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Form styling */
+form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+legend {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: gray;
+    font-weight: 400;
+}
+
+input, select {
+    padding: 10px;
+    border: 0.5px solid blueviolet;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    outline-color: blueviolet;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+/* Footer styling */
+footer {
+    padding: 12px 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid brown;
+    text-align: center;
+    font-size: 0.9rem;
+    color: brown;
+}
+
+footer a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
